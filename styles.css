@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+:root {
+  --Very-dark-blue-main-background: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+  --Soft-violet-accent-: hsl(277, 64%, 61%);
+  --White-main-heading-stats: hsl(0, 0%, 100%);
+  --Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+@media (max-width: 750px) {
+  main {
+    max-width: 322.5px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--Very-dark-blue-main-background);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 1.7rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.image {
+  background-image: url("./images/image-header-mobile.jpg");
+  width: 100%;
+  aspect-ratio: 1.375/1;
+  background-size: 100% 100%;
+  background-color: var(--Soft-violet-accent-);
+  background-blend-mode: multiply;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--Dark-desaturated-blue-card-background);
+  padding: 2.5rem 2rem 2.3rem 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+h1 {
+  color: var(--White-main-heading-stats);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+h1 span {
+  color: var(--Soft-violet-accent-);
+}
+
+p {
+  color: var(--Slightly-transparent-white-main-paragraph);
+  padding: 1rem 0 2rem 0;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+li {
+  color: var(--White-main-heading-stats);
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+
+li:first-of-type {
+  text-transform: none;
+  padding: 0;
+}
+
+li p {
+  color: var(--Slightly-transparent-white-stat-headings);
+  text-transform: uppercase;
+  padding-top: 0.3rem;
+  padding-bottom: 0;
+  font-size: 0.7rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-color: var(--Very-dark-blue-main-background);
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    border-radius: 0.5rem;
+    height: 80%;
+  }
+
+  .image {
+    background-image: url("./images/image-header-desktop.jpg");
+    width: 100%;
+    aspect-ratio: 1.29/1;
+    background-size: 100% 100%;
+    background-color: var(--Soft-violet-accent-);
+    background-blend-mode: multiply;
+    background-clip: content-box;
+  }
+
+  .text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--Dark-desaturated-blue-card-background);
+    padding: 4.5rem;
+    text-align: left;
+    letter-spacing: 1px;
+    width: 100%;
+  }
+
+  h1 {
+    color: var(--White-main-heading-stats);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    width: 90%;
+  }
+
+  h1 span {
+    color: var(--Soft-violet-accent-);
+  }
+
+  p {
+    color: var(--Slightly-transparent-white-main-paragraph);
+    padding: 1.7rem 0 3.2rem 0;
+    width: 85%;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3.5rem;
+    text-transform: uppercase;
+    list-style-type: none;
+  }
+
+  li {
+    color: var(--White-main-heading-stats);
+    font-weight: 700;
+    font-size: 1.85rem;
+    padding-top: 1rem;
+  }
+
+  li:first-of-type {
+    text-transform: none;
+    padding-top: 1rem;
+  }
+
+  li p {
+    color: var(--Slightly-transparent-white-stat-headings);
+    text-transform: uppercase;
+    padding-top: 0.3rem;
+    padding-bottom: 0;
+    font-size: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+  }
+}
