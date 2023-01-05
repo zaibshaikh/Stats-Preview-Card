@@ -127,8 +127,7 @@ li p {
     align-items: center;
 
     overflow: hidden;
-    border-radius: 0.5rem;
-    height: 80%;
+    border-radius: 0.75rem;
   }
 
   .image {
